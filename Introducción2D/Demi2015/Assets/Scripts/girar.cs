@@ -82,7 +82,7 @@ public class girar : MonoBehaviour {
 
     }
 
-    void OnDrawGizmosSelected()
+    void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawSphere(posicion_final, 0.1f);
