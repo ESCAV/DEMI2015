@@ -31,6 +31,7 @@ public class teleport : MonoBehaviour {
     }
     void OnDrawGizmos()
      {
+        target = transform.Find("target");
         Gizmos.color = Color.blue;
         Gizmos.DrawLine(transform.position, target.position);
 
