@@ -23,11 +23,11 @@ public class teleport : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D col)
     {
         GameObject e = (GameObject)Instantiate(efecto, col.transform.position, col.transform.rotation);
-        //Destroy(e, 1);
+        Destroy(e, 1);
         col.transform.position = target.transform.position;
         col.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         e = (GameObject)Instantiate(efecto, col.transform.position, col.transform.rotation);
-        //Destroy(e, 1);
+        Destroy(e, 1);
     }
     void OnDrawGizmos()
      {
