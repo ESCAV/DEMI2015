@@ -18,7 +18,7 @@ public class puente : MonoBehaviour {
 	void Update () {
         distancia = Vector3.Distance(union.connectedBody.transform.position, transform.position);
         estres = distancia / union.distance;
-        Debug.Log(estres);
+        //Debug.Log(estres);
         if(estres > resistencia)
         {
             union.enabled = false;

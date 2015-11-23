@@ -30,12 +30,12 @@ public class MovimientoScript : MonoBehaviour {
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
         }
 
-        if (Input.GetButtonDown("Fire1"))
+       /* if (Input.GetButtonDown("Fire1"))
         {
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0,-jumpForce));
             
-        }
+        }*/
         Debug.DrawLine(transform.position, new Vector3(transform.position.x + velocidad.x, transform.position.y + velocidad.y, transform.position.z),Color.green);
         Debug.DrawLine(transform.position, new Vector3(transform.position.x + h, transform.position.y + v, transform.position.z), Color.red);
     }
